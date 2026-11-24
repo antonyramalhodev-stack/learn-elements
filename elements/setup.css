@@ -1,0 +1,22 @@
+/*
+ * One-time setup for the lesson elements.
+ * Import this file once, in the global CSS or the root layout of your site.
+ */
+
+/* Primer design tokens: sizes, type scale, and the light and dark color themes. */
+@import '@primer/primitives/dist/css/primitives.css';
+@import '@primer/primitives/dist/css/functional/themes/light.css';
+@import '@primer/primitives/dist/css/functional/themes/dark.css';
+
+/* Mona Sans, GitHub's typeface. */
+@import '@fontsource-variable/mona-sans/index.css';
+
+/* The elements keep GitHub's typeface and text color on any page. */
+.learn-element {
+  --fontStack-system: 'Mona Sans Variable', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    'Noto Sans', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+  --fontStack-sansSerif: var(--fontStack-system);
+  --fontStack-sansSerifDisplay: var(--fontStack-system);
+  color: var(--fgColor-default);
+  font-family: var(--fontStack-system);
+}
